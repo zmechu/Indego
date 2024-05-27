@@ -3,9 +3,17 @@
         "abort": {
             "already_configured": "Ta kosiarka Bosch Indego została już skonfigurowana wcześniej!",
             "connection_error": "Błąd połączenia z Bosch Indego API!",
-            "no_mowers_found": "Nie znaleziono żadnej kosiarki na tym koncie Bosch Indego!"
+            "no_mowers_found": "Na tym koncie Bosch Indego nie znaleziono żadnej kosiarki!"
         },
         "step": {
+            "advanced": {
+                "data": {
+                    "user_agent": "User-Agent",
+                    "expose_mower": "Wyświetl kosiarkę Indego jako encję kosiarki w HomeAssistant",
+                    "expose_vacuum": "Wyświetl kosiarkę Indego jako encję odkurzacza w HomeAssistant"
+                },
+                "description": "Ustawienia zaawansowane komponentu Bosch Indego. Większość użytkowników może pozostawić je bez zmian."
+            },
             "mower": {
                 "data": {
                     "mower_serial": "Numer seryjny kosiarki",
@@ -14,5 +22,18 @@
                 "description": "Proszę wybrać numer seryjny kosiarki Bosch którą chcesz dodać"
             }
         }
+    },
+    "options": {
+      "step": {
+          "init": {
+              "title": "Ustawienia zaawansowane",
+              "description": "Ustawienia zaawansowane komponentu Bosch Indego. Po zmianie tych ustawień może być konieczne ponowne załadowanie komponentu.",
+              "data": {
+                  "user_agent": "User-Agent",
+                  "expose_mower": "Wyświetl kosiarkę Indego jako encję kosiarki w HomeAssistant",
+                  "expose_vacuum": "Wyświetl kosiarkę Indego jako encję odkurzacza w HomeAssistant"
+              }
+          }
+      }
     }
 }
